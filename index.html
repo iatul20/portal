@@ -1,80 +1,83 @@
 <html>
 <head>
-	
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+<script src="https://use.fontawesome.com/cac72cc81c.js"></script>
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
 </head>
 <style>
+div.box a{
+  text-decoration: none;
+  color: #138D75;
+}
 body{
     background:url("b.png"),linear-gradient(to left,rgb(210,36,68),rgb(102,68,178));
 }
-div img{
-    margin-left: 65px;
-	height:50%;
-	width: 90%;
-
-}#example1 {
-  
-    background: linear-gradient(to bottom, #0066ff 0%, #66ffff 100%);
-    box-shadow: 10px 10px 5px yellow;
-  width: 0 auto;
-    margin-top: -30px;
-    font-size: 30px;
-    padding-left: 250px;
-    height: auto;
-    background: linear-gradient(to bottom, #0066ff 0%, #66ffff 100%);
-    font-family: "times new roman", times,serif,    
+body,ul,h1{
+  margin:0;
+}
+body header img{
+  width: 100%;
+}
+body header h1{
+  background-color: #138D75;
+  color: white;
+  font-size: 2.2em;
+}
+body header h1:hover{
+  background-color: white;
+  color: #138D75;
+  transition-duration: 0.9s;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 0.63);
+}
+div.row a:hover h3 {
+  transform: scale(1.1);
+  transition-duration: 0.6s;
+} 
+div.row a:hover i{
+  color: #0B615E;
+}
+div.box,header h1{
+  padding: 40px;
+}
+div.wrap{
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: white;
 }
 
-.preview {
-    
-    width: 300px;
-    height: 300px;
-  
-}
-.preview img {
-
-    width: 300px;
-  	height: 300px;
-
-}
-
-.preview:hover > div {
-    display: block;
-    opacity: 1.0;
-}
-.preview > div div {
-    padding: 20px 40px;
-}
-.preview h2 {
-    font-size: 1.2em;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
 footer{
     color:black;
     font-size:1.8em;
       background: linear-gradient(to bottom, #0066ff 0%, #66ffff 100%);
-    box-shadow: 10px 10px 5px yellow;
+      padding: 15px;
 }
-h1:hover{
- color:red;
-}
-
   </style>
     <body>
-       <div>    
-		      <img src="img/ac.jpg">
-		   </div>
-		        <div id="example1">  
-		           <h1> <marquee>DOCTOR PATIENT PORTAL</marquee></h1>
-		        </div>
-   
+       <div class="wrap">
+    <header class="text-center">
+      <h1>DOCTOR PATIENT PORTAL</h1>
+       <img src="img/ac.jpg">
+    </header>
+          
+   <div class="row text-center box">
+      <div class="col-md-4 col-sm-6">
+        <a href="login.html"><i class="fa fa-user-secret fa-5x" aria-hidden="true"><h3>Admin</h3></i></a>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <a href="login.html"><i class="fa fa-user-md fa-5x" aria-hidden="true"></i><h3>Doctor</h3></a>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <a href="login.html"><i class="fa fa-user-plus fa-5x" aria-hidden="true"></i><h3>Patient</h3></a>
+      </div>
+   </div>
+      <footer class="text-center">
+          <p>copyright &copy; All Rights Reserved</p>
+          <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+          <a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
 
-            <div class="preview">
-               <div> <a href="#"><img src="img/admin.jpg" style="margin-left: 30%;"></a> </div> 
-               <div><a href="#"> <img src="img/doctor.jpg" style="margin-left: 185%;margin-top: -100%"> </a></div> 
-               <div><a href="#"> <img src="img/patient.png" style= "margin-left: 330%;margin-top: -100%"></a></div> 
-            </div>
-      <footer>
-          <center><p>copyright &copy; All Rights Reserved</p></center>
       </footer>
+    </div>
+    </body>
+    </html>

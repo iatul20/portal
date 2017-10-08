@@ -109,13 +109,12 @@ li{
  ul li:hover {
   text-decoration:none;
   color:red;
-  font-style: italic;
 }
 
 input{
   margin:10px 0;
 }
-input[type=Submit]{
+input[type=search]{
    color: aqua;
     background-color: black;
   margin-left: 50px;
@@ -127,8 +126,11 @@ footer{
     box-shadow: 10px 10px 5px yellow;
 }
 input[type=submit]{
-margin-left: 50%;
-margin-top: -1%;
+margin-left: 10px;
+    margin-top: 3%;
+}
+button{
+      margin-top: 10px;
 }
 </style>
 <body >
@@ -138,11 +140,11 @@ margin-top: -1%;
         <div id="example1">  
            <ul>
 
-             <li> <i style="font-size:30px" class="fa">&#xf039;</i>My details</li>
-             <li>My appointments</li>
-             <li>Search Patients</li>
-             <li>Add description</li>
-             <li>Logout</li>
+          <li><a href="doctordetail.html">My details</a></li>
+             <li><a href="patientappdet.html">My appointments</a></li>
+             <li><a href="docsearchpatient.html">Search Patients</a></li>
+             <li><a href="docadddesc.html">Add description</a></li>
+             <li><a href="index.html">Logout</li>
         
            </ul>
        </div>
@@ -174,6 +176,15 @@ margin-top: -1%;
   </tr>
     </table>
 </div>
+
+<center><button onclick="myFunction()">Submit</button></center>
+
+<script>
+function myFunction() {
+    alert("Inserted Successfully");
+}
+</script>
+
   <footer>
       <center><p>copyright &copy; All Rights Reserved</p></center>
   </footer>
